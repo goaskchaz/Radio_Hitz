@@ -1,12 +1,12 @@
 # Sync-MyMediaCatalog.ps1
-# Version 1.0
+# Version 1.1
 # Copies reviewed MyMedia inventory Markdown/CSV files into a local Git clone.
 # Preview by default. -Execute copies; -Execute -Push also commits and pushes.
 # Does not copy audio files, delete destination files, or regenerate inventories.
 [CmdletBinding()]
 param(
     [string]$Library = 'D:\BU\MyMedia\Library',
-    [string]$Repository,
+    [string]$Repository = 'D:\BU\My_Computer\GitResp\Radio-Hitz',
     [switch]$Execute,
     [switch]$Push
 )
@@ -16,9 +16,6 @@ $ErrorActionPreference = 'Stop'
 
 if ($Push -and -not $Execute) {
     throw 'Use -Execute -Push together. -Push alone is not allowed.'
-}
-if (-not $Repository) {
-    throw 'Specify -Repository with the path to your local Radio_Hitz Git clone.'
 }
 if (-not (Test-Path -LiteralPath $Library -PathType Container)) {
     throw "Library not found: $Library"
