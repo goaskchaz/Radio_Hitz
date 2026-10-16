@@ -11,7 +11,7 @@ This project uses [My Media for Alexa](https://www.mymediaalexa.com/) as the loc
 
 | Script | Version | Description |
 | --- | --- | --- |
-| [Update-RadioIndex.ps1](PowerShell/Utilities/Update-RadioIndex.ps1) | 1.0 | Regenerates the radio index; optionally counts local audio recordings. |\n| [Check_MyMediaInv.ps1](PowerShell/Utilities/Check_MyMediaInv.ps1) | 1.3.1 | Inventories media categories, builds per-show recording lists, and generates README and CSV files; excludes ZIP folders. |\n| [Sync-MyMediaCatalog.ps1](PowerShell/Utilities/Sync-MyMediaCatalog.ps1) | 1.0 | Previews or copies reviewed README/CSV inventories into a local Git clone; optionally commits and pushes. |
+| [Update-RadioIndex.ps1](PowerShell/Utilities/Update-RadioIndex.ps1) | 1.0 | Regenerates the radio index; optionally counts local audio recordings. |\n| [Check_MyMediaInv.ps1](PowerShell/Utilities/Check_MyMediaInv.ps1) | 1.3.1 | Inventories media categories, builds per-show recording lists, and generates README and CSV files; excludes ZIP folders. |\n| [Sync-MyMediaCatalog.ps1](PowerShell/Utilities/Sync-MyMediaCatalog.ps1) | 1.1 | Previews or copies reviewed README/CSV inventories into a local Git clone; optionally commits and pushes. |
 
 ## Media Category Indexes
 
@@ -40,17 +40,17 @@ See [setup documentation](Documentation/Setup.md).
 
 ## Publish Reviewed MyMedia Catalogs
 
-Install Git for Windows and clone this repository to your PC. Run the [catalog synchronization utility](PowerShell/Utilities/Sync-MyMediaCatalog.ps1) from PowerShell, replacing the example clone path with your actual location:
+Install Git for Windows and clone this repository to your PC. The [catalog synchronization utility](PowerShell/Utilities/Sync-MyMediaCatalog.ps1) defaults to `D:\BU\My_Computer\GitResp\Radio-Hitz`; use `-Repository` only to override it:
 
 ```powershell
 # Preview only
-& '.\PowerShell\Utilities\Sync-MyMediaCatalog.ps1' -Repository 'C:\GitHub\Radio_Hitz'
+& '.\PowerShell\Utilities\Sync-MyMediaCatalog.ps1' 
 
 # Copy approved generated catalog files into the local clone
-& '.\PowerShell\Utilities\Sync-MyMediaCatalog.ps1' -Repository 'C:\GitHub\Radio_Hitz' -Execute
+& '.\PowerShell\Utilities\Sync-MyMediaCatalog.ps1'  -Execute
 
 # On a subsequent run, copy and publish directly (requires a clean clone)
-& '.\PowerShell\Utilities\Sync-MyMediaCatalog.ps1' -Repository 'C:\GitHub\Radio_Hitz' -Execute -Push
+& '.\PowerShell\Utilities\Sync-MyMediaCatalog.ps1'  -Execute -Push
 ```
 
 The script copies only known inventory README and CSV filenames from the local MyMedia Library into `Catalog/`. It skips ZIP directories and README files without the expected generated marker. It checks for obvious absolute local paths, but **manually review catalog filenames and metadata before publishing to this public repository**. It does not copy audio files or delete destination files. Running `-Execute` without `-Push` changes the local clone, which must be committed, stashed, or reverted before running `-Execute -Push`.
