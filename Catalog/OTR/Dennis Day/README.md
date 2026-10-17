@@ -9,11 +9,6 @@
 |---|---:|
 | (Show root) | 0 |
 
-## Recording Index
-
-| # | Recording / Relative Filename |
-|---:|---|
-| - | No recordings found |
 
 ## Research and Documentation
 
