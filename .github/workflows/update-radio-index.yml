@@ -1,0 +1,61 @@
+name: Update Radio Index
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'Catalog/RadioShows.csv'
+      - 'PowerShell/Utilities/Update-RadioIndex.ps1'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: radio-index-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          persist-credentials: true
+
+      - name: Rebuild radio index
+        shell: pwsh
+        run: ./PowerShell/Utilities/Update-RadioIndex.ps1
+
+      - name: Commit index changes
+        shell: pwsh
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add README.md
+
+          git diff --cached --quiet
+          $diffExit = $LASTEXITCODE
+
+          if ($diffExit -eq 0) {
+            Write-Host "No index changes to commit."
+          }
+          elseif ($diffExit -eq 1) {
+            git commit -m "Refresh radio show directory"
+            if ($LASTEXITCODE -ne 0) {
+              throw "Git commit failed."
+            }
+
+            git push origin HEAD:main
+            if ($LASTEXITCODE -ne 0) {
+              throw "Git push failed."
+            }
+          }
+          else {
+            throw "Git diff failed with exit code $diffExit."
+          }
