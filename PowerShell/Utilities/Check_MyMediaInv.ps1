@@ -144,8 +144,7 @@ foreach ($category in $categories) {
                 $folders += "| $(Escape-Markdown $name) | $count |"
             }
             $body = @("**Recordings:** $($showFiles.Count)",'','## Season and Subfolder Inventory','') +
-                $folders + @('','## Recording Index','') +
-                @(Get-Index -Base $show.FullName -Files $showFiles) +
+                $folders +
                 @('','## Research and Documentation','',
                   'Episode titles and original broadcast dates require separate source verification.')
             Save-Readme -Directory (Join-Path $otrLibrary $show.Name) -Title $show.Name -Lines $body
