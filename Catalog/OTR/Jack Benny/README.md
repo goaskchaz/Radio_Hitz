@@ -3,6 +3,10 @@
 
 **Recordings:** 1442
 
+## Background
+
+*The Jack Benny Program* was one of American radio's defining comedy series, built around Benny's carefully cultivated persona as a vain, stingy, perpetually 39-year-old entertainer. Regular performers included Mary Livingstone, Eddie Anderson, Don Wilson, Phil Harris, and Dennis Day. Its recurring characters, pauses, and running jokes influenced generations of broadcast comedy. [Related cast documentation: Smithsonian](https://www.si.edu/object/siris_sil_548054).
+
 ## Season and Subfolder Inventory
 
 | Season / Subfolder | Recordings |
@@ -50,4 +54,8 @@
 
 ## Research and Documentation
 
-Episode titles and original broadcast dates require separate source verification.
+| Title | File Type | Description | Source | Link |
+| --- | --- | --- | --- | --- |
+| No files listed | — | Add small, rights-cleared research files to this show's folder and link them here. | — | — |
+
+Research files may include documents, images, spreadsheets, small audio clips, and ZIP archives. Add links using repository-relative paths. Original broadcast dates and episode identifications should be verified against sources.
