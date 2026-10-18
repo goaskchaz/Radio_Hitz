@@ -56,6 +56,29 @@
 
 | Title | File Type | Description | Source | Link |
 | --- | --- | --- | --- | --- |
-| No files listed | — | Add small, rights-cleared research files to this show's folder and link them here. | — | — |
-
+| Jack Beeny Show (1934) | URL | Jack Beeny single episodes | Internet Archive | [View](https://archive.org/details/OTRR_Jack_Benny_Singles_1932-1934) |   
+| Jack Beeny Show (1935) | URL | Jack Beeny single episodes| Internet Archive | [View](https://archive.org/details/OTRR_Jack_Benny_Singles_1934-1935) |  
+| Jack Beeny Show (1936) | URL | Jack Beeny single episodes | Internet Archive | [View](https://archive.org/details/OTRR_Jack_Benny_Singles_1935-1936) |  
+| Jack Beeny Show (1937) | URL | Jack Beeny single episodes | Internet Archive | [View](https://archive.org/details/OTRR_Jack_Benny_Singles_1936-1937) |  
+| Jack Beeny Show (1937) | URL | Jack Beeny single episodes | Internet Archive | [View](https://archive.org/details/OTRR_Jack_Benny_Singles_1937-1938) |  
+| Jack Beeny Show (1938) | URL | Jack Beeny single episodes | Internet Archive | [View](https://archive.org/details/OTRR_Jack_Benny_Singles_1938-1939) |  
+| Jack Beeny Show (1939) | URL | Jack Beeny single episodes | Internet Archive | [View](https://archive.org/details/OTRR_Jack_Benny_Singles_1939-1940) |  
+| Jack Beeny Show (1940) | URL | Jack Beeny single episodes | Internet Archive | [View](https://archive.org/details/OTRR_Jack_Benny_Singles_1940-1941) |  
+| Jack Beeny Show (1941) | URL | Jack Beeny single episodes | Internet Archive | [View](https://archive.org/details/OTRR_Jack_Benny_Singles_1941-1942) |
+| Jack Beeny Show (1942) | URL | Jack Beeny single episodes | Internet Archive | [View](https://archive.org/details/OTRR_Jack_Benny_Singles_1942-1943) | 
+| Jack Beeny Show (1943) | URL | Jack Beeny single episodes | Internet Archive | [View](https://archive.org/details/OTRR_Jack_Benny_Singles_1943-1944 ) | 
+| Jack Beeny Show (1944) | URL | Jack Beeny single episodes | Internet Archive | [View](https://archive.org/details/OTRR_Jack_Benny_Singles_1944-1945 ) | 
+| Jack Beeny Show (1945) | URL | Jack Beeny single episodes | Internet Archive | [View](https://archive.org/details/OTRR_Jack_Benny_Singles_1945-1946 ) | 
+| Jack Beeny Show (1946) | URL | Jack Beeny single episodes | Internet Archive | [View]( https://archive.org/details/OTRR_Jack_Benny_Singles_1946-1947) | 
+| Jack Beeny Show (1947) | URL | Jack Beeny single episodes | Internet Archive | [View](https://archive.org/details/OTRR_Jack_Benny_Singles_1947-1948 ) | 
+| Jack Beeny Show (1948) | URL | Jack Beeny single episodes | Internet Archive | [View](https://archive.org/details/OTRR_Jack_Benny_Singles_1948-1949 ) | 
+| Jack Beeny Show (1949) | URL | Jack Beeny single episodes | Internet Archive | [View](https://archive.org/details/OTRR_Jack_Benny_Singles_1949-1950 ) | 
+| Jack Beeny Show (1950) | URL | Jack Beeny single episodes | Internet Archive | [View]( https://archive.org/details/OTRR_Jack_Benny_Singles_1950-1951) | 
+| Jack Beeny Show (1951) | URL | Jack Beeny single episodes | Internet Archive | [View](https://archive.org/details/OTRR_Jack_Benny_Singles_1951-1952 ) | 
+| Jack Beeny Show (1952) | URL | Jack Beeny single episodes | Internet Archive | [View](https://archive.org/details/OTRR_Jack_Benny_Singles_1952-1953 ) | 
+| Jack Beeny Show (1953) | URL | Jack Beeny single episodes | Internet Archive | [View](https://archive.org/details/OTRR_Jack_Benny_Singles_1953-1954 ) | 
+| Jack Beeny Show (1954) | URL | Jack Beeny single episodes | Internet Archive | [View](https://archive.org/details/OTRR_Jack_Benny_Singles_1954-1955 ) | 
+| Jack Beeny Show (1955) | URL | Jack Beeny single episodes | Internet Archive | [View](https://archive.org/details/OTRR_Jack_Benny_Singles_1954-1955 ) | 
+| Jack Beeny As Guest #1 | URL | Jack Benny Guest Appearances | Internet Archive | [View](https://archive.org/details/OTRR_Jack_Benny_Singles_GuestStar_01) | 
+| Jack Beeny As Guest #2 | URL | Jack Benny Guest Appearances | Internet Archive | [View](https://archive.org/details/OTRR_Jack_Benny_Singles_GuestStar_02) | 
 Research files may include documents, images, spreadsheets, small audio clips, and ZIP archives. Add links using repository-relative paths. Original broadcast dates and episode identifications should be verified against sources.
