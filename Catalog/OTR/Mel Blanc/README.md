@@ -3,6 +3,10 @@
 
 **Recordings:** 0
 
+## Background
+
+Mel Blanc was a prominent American radio actor and voice performer, heard in comedy programs including *The Jack Benny Program*. He also starred in *The Mel Blanc Show*, a situation comedy featuring his character as the proprietor of a fix-it shop. The precise scope of recordings in this folder still needs confirmation. [Related cast documentation: Smithsonian](https://www.si.edu/object/siris_sil_548054).
+
 ## Season and Subfolder Inventory
 
 | Season / Subfolder | Recordings |
@@ -12,4 +16,8 @@
 
 ## Research and Documentation
 
-Episode titles and original broadcast dates require separate source verification.
+| Title | File Type | Description | Source | Link |
+| --- | --- | --- | --- | --- |
+| No files listed | — | Add small, rights-cleared research files to this show's folder and link them here. | — | — |
+
+Research files may include documents, images, spreadsheets, small audio clips, and ZIP archives. Add links using repository-relative paths. Original broadcast dates and episode identifications should be verified against sources.
