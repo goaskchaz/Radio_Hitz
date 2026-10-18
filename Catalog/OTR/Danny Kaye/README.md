@@ -3,6 +3,10 @@
 
 **Recordings:** 27
 
+## Background
+
+Danny Kaye was a singer, comedian, and actor whose fast-paced verbal humor and musical performances carried into American radio during the 1940s. *The Danny Kaye Show* featured comedy sketches and musical entertainment, reflecting his growing popularity in films and on stage. [Further identification and episode research needed](https://www.worldradiohistory.com/).
+
 ## Season and Subfolder Inventory
 
 | Season / Subfolder | Recordings |
@@ -12,4 +16,8 @@
 
 ## Research and Documentation
 
-Episode titles and original broadcast dates require separate source verification.
+| Title | File Type | Description | Source | Link |
+| --- | --- | --- | --- | --- |
+| No files listed | — | Add small, rights-cleared research files to this show's folder and link them here. | — | — |
+
+Research files may include documents, images, spreadsheets, small audio clips, and ZIP archives. Add links using repository-relative paths. Original broadcast dates and episode identifications should be verified against sources.
