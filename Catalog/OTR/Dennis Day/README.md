@@ -3,6 +3,10 @@
 
 **Recordings:** 0
 
+## Background
+
+Dennis Day became widely known as a tenor and comic performer on *The Jack Benny Program*. He later starred in his own radio comedy-variety series, *A Day in the Life of Dennis Day*, which combined domestic comedy with musical numbers. [Related cast documentation: Smithsonian](https://www.si.edu/object/siris_sil_548054).
+
 ## Season and Subfolder Inventory
 
 | Season / Subfolder | Recordings |
@@ -12,4 +16,8 @@
 
 ## Research and Documentation
 
-Episode titles and original broadcast dates require separate source verification.
+| Title | File Type | Description | Source | Link |
+| --- | --- | --- | --- | --- |
+| No files listed | — | Add small, rights-cleared research files to this show's folder and link them here. | — | — |
+
+Research files may include documents, images, spreadsheets, small audio clips, and ZIP archives. Add links using repository-relative paths. Original broadcast dates and episode identifications should be verified against sources.
