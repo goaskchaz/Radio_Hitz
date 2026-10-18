@@ -152,13 +152,13 @@ foreach ($category in $categories) {
                           '| No files listed | — | Add reviewed research files and links here. | — | — |')
             if (Test-Path -LiteralPath $existingPath) {
                 $previous = Get-Content -LiteralPath $existingPath -Raw
-                $bgMatch = [regex]::Match($previous, '(?s)(?m)^## Background\\s*\\r?\\n(.*?)(?=^## Season and Subfolder Inventory|^## Research and Documentation|\\z)')
-                $rsMatch = [regex]::Match($previous, '(?s)(?m)^## Research and Documentation\\s*\\r?\\n(.*?)(?=^## |\\z)')
+                $bgMatch = [regex]::Match($previous, '(?s)(?m)^## Background\s*\r?\n(.*?)(?=^## Season and Subfolder Inventory|^## Research and Documentation|\z)')
+                $rsMatch = [regex]::Match($previous, '(?s)(?m)^## Research and Documentation\s*\r?\n(.*?)(?=^## |\z)')
                 if ($bgMatch.Success -and $bgMatch.Groups[1].Value.Trim()) {
-                    $background = @($bgMatch.Groups[1].Value.Trim() -split '\\r?\\n')
+                    $background = @($bgMatch.Groups[1].Value.Trim() -split '\r?\n')
                 }
                 if ($rsMatch.Success -and $rsMatch.Groups[1].Value.Trim()) {
-                    $research = @($rsMatch.Groups[1].Value.Trim() -split '\\r?\\n')
+                    $research = @($rsMatch.Groups[1].Value.Trim() -split '\r?\n')
                 }
             }
             $body = @("**Recordings:** $($showFiles.Count)",'','## Background','') +
