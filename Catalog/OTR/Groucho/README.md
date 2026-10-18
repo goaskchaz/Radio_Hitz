@@ -3,6 +3,10 @@
 
 **Recordings:** 39
 
+## Background
+
+Groucho Marx hosted *You Bet Your Life*, a comedy quiz program that began on radio in 1947. Its appeal depended as much on Groucho's improvised conversations with contestants as on the quiz itself. The series subsequently moved to television. [Further episode research](https://www.worldradiohistory.com/).
+
 ## Season and Subfolder Inventory
 
 | Season / Subfolder | Recordings |
@@ -12,4 +16,8 @@
 
 ## Research and Documentation
 
-Episode titles and original broadcast dates require separate source verification.
+| Title | File Type | Description | Source | Link |
+| --- | --- | --- | --- | --- |
+| No files listed | — | Add small, rights-cleared research files to this show's folder and link them here. | — | — |
+
+Research files may include documents, images, spreadsheets, small audio clips, and ZIP archives. Add links using repository-relative paths. Original broadcast dates and episode identifications should be verified against sources.
