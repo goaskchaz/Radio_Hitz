@@ -1,5 +1,5 @@
 # Check_MyMediaInv.ps1
-# Version 1.3.1 - My Media for Alexa inventory and README generator
+# Version 1.4.0 - My Media for Alexa inventory and README generator
 # Preview by default. -Execute creates documentation, never modifies recordings.
 [CmdletBinding()]
 param(
@@ -143,11 +143,28 @@ foreach ($category in $categories) {
                 $name = $sub.FullName.Substring($show.FullName.Length).TrimStart('\','/')
                 $folders += "| $(Escape-Markdown $name) | $count |"
             }
-            $body = @("**Recordings:** $($showFiles.Count)",'','## Season and Subfolder Inventory','') +
-                $folders +
-                @('','## Research and Documentation','',
-                  'Episode titles and original broadcast dates require separate source verification.')
-            Save-Readme -Directory (Join-Path $otrLibrary $show.Name) -Title $show.Name -Lines $body
+            # Preserve manually maintained Background and Research sections.
+            $showLibrary = Join-Path $otrLibrary $show.Name
+            $existingPath = Get-ReadmePath $showLibrary
+            $background = @('Background research pending.')
+            $research = @('| Title | File Type | Description | Source | Link |',
+                          '| --- | --- | --- | --- | --- |',
+                          '| No files listed | — | Add reviewed research files and links here. | — | — |')
+            if (Test-Path -LiteralPath $existingPath) {
+                $previous = Get-Content -LiteralPath $existingPath -Raw
+                $bgMatch = [regex]::Match($previous, '(?s)(?m)^## Background\\s*\\r?\\n(.*?)(?=^## Season and Subfolder Inventory|^## Research and Documentation|\\z)')
+                $rsMatch = [regex]::Match($previous, '(?s)(?m)^## Research and Documentation\\s*\\r?\\n(.*?)(?=^## |\\z)')
+                if ($bgMatch.Success -and $bgMatch.Groups[1].Value.Trim()) {
+                    $background = @($bgMatch.Groups[1].Value.Trim() -split '\\r?\\n')
+                }
+                if ($rsMatch.Success -and $rsMatch.Groups[1].Value.Trim()) {
+                    $research = @($rsMatch.Groups[1].Value.Trim() -split '\\r?\\n')
+                }
+            }
+            $body = @("**Recordings:** $($showFiles.Count)",'','## Background','') +
+                $background + @('','## Season and Subfolder Inventory','') +
+                $folders + @('','## Research and Documentation','') + $research
+            Save-Readme -Directory $showLibrary -Title $show.Name -Lines $body
         }
     } else {
         $body = @("**Recordings:** $($files.Count)",'','## Recording Index','') +
