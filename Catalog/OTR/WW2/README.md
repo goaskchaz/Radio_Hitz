@@ -3,6 +3,10 @@
 
 **Recordings:** 0
 
+## Background
+
+This folder is labeled **WW2** and appears to represent a historical collection rather than one identified radio show. During World War II, radio carried news, speeches, military broadcasts, entertainment, and programs for service personnel. The contents should be reviewed before assigning a more specific historical description. [Context: National WWII Museum](https://www.nationalww2museum.org/war/articles/mail-call-bob-hope-and-command-performance).
+
 ## Season and Subfolder Inventory
 
 | Season / Subfolder | Recordings |
@@ -12,4 +16,8 @@
 
 ## Research and Documentation
 
-Episode titles and original broadcast dates require separate source verification.
+| Title | File Type | Description | Source | Link |
+| --- | --- | --- | --- | --- |
+| No files listed | — | Add small, rights-cleared research files to this show's folder and link them here. | — | — |
+
+Research files may include documents, images, spreadsheets, small audio clips, and ZIP archives. Add links using repository-relative paths. Original broadcast dates and episode identifications should be verified against sources.
